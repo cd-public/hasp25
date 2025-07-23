@@ -2,5 +2,7 @@ all: build
 	vvp unit -vcd
 
 build:
-	iverilog -o unit testbench.v design.v
+	iverilog -o unit test.v design.v
 
+clean:
+	rm unit
