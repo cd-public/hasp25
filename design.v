@@ -1,4 +1,5 @@
 module unit(out, clk);
+
   input            clk;
   output reg [7:0] out;
   reg        [7:0] key;

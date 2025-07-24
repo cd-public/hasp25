@@ -1,0 +1,99 @@
+$date
+	Thu Jul 24 13:07:17 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module test $end
+$var wire 8 ! val [7:0] $end
+$var reg 1 " clk $end
+$scope module u1 $end
+$var wire 1 " clk $end
+$var reg 8 # cnt [7:0] $end
+$var reg 8 $ key [7:0] $end
+$var reg 1 % key_t $end
+$var reg 8 & one [7:0] $end
+$var reg 1 ' one_t $end
+$var reg 8 ( out [7:0] $end
+$var reg 1 ) out_t $end
+$var reg 8 * two [7:0] $end
+$var reg 1 + two_t $end
+$upscope $end
+$scope module u2 $end
+$var wire 1 " clk $end
+$var reg 8 , cnt [7:0] $end
+$var reg 8 - key [7:0] $end
+$var reg 1 . key_t $end
+$var reg 8 / one [7:0] $end
+$var reg 1 0 one_t $end
+$var reg 8 1 out [7:0] $end
+$var reg 1 2 out_t $end
+$var reg 8 3 two [7:0] $end
+$var reg 1 4 two_t $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+14
+bx 3
+02
+bx 1
+00
+bx /
+0.
+b10100001 -
+b0 ,
+0+
+bx *
+0)
+bx (
+1'
+bx &
+0%
+b10100001 $
+b0 #
+0"
+bx !
+$end
+#1
+b1 #
+b1 ,
+1"
+#2
+0"
+#3
+b10100001 /
+b10 ,
+b10100001 &
+b10 #
+1"
+#4
+0"
+#5
+b10100001 *
+b11 #
+b10100001 3
+b11 ,
+1"
+#6
+0"
+#7
+12
+b10100001 !
+b10100001 1
+b100 ,
+b10100001 (
+b100 #
+1"
+#8
+0"
+#9
+b101 #
+b101 ,
+1"
+#10
+0"
