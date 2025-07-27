@@ -18,12 +18,6 @@ for entry in os.scandir(directory):
         signal.append(name)
         # retrive times-of-flow tuples
         tt = pd.read_pickle(entry)
-        # remove shadow_ prefix
-        tt.index = tt.index.str.replace('shadow_','')
-        # pop the root source signal
-        # ... which somehow isn't always present?
-        if name in tt.index:
-            tt.pop(name)
         if not tt.empty:
             # differentiate atomics from others
             # ... wish I had operator in base language!
@@ -66,4 +60,4 @@ for sink in graph:
 df = pd.DataFrame(graph)
 df.columns = signal
 df.index = signal
-df.to_pickle("reduced/path.pickle")
+df.to_pickle("reduced/graph.pickle")
